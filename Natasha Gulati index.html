@@ -1,0 +1,92 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webpage</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #f70f83;
+                color: aliceblue;
+                display: flex
+                min height: 100vh;
+                justify-content: center;
+            }
+
+            .profile{   
+                background-color: rgba(255, 255, 255, 0.15);
+                border-radius: 20px;
+                padding: 20px;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+                max-width: 500px;
+                text-align: center;
+            }
+
+            h1 {
+                font-family: brushScriptMT, cursive;
+                font-size: 36px;
+                margin-bottom: 10px;
+            }
+            
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin: 20px;
+            }
+
+            img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                border: 3px solid #fff;
+                margin: 15px 0;
+            }
+            .btn {
+                position: relative;
+                background-color: transparent;
+                border: 2px solid #fff;
+                color: white;
+                padding: 10px 30px;
+                font-size: 16px;
+                text-transform: uppercase;
+                border-radius: 30px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                overflow: hidden;
+            }
+            .btn::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: #fff;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.3s ease-in-out;
+                z-index: -1;
+            }
+            
+            .btn:hover {
+                color: #f70f83;
+            }
+
+            .btn:hover::before {
+                transform: scaleX(1);
+            }
+        </style>
+        </head>
+    <body>
+        <div class="profile">
+            <img src="https://via.placeholder.com/120" alt="Profile Picture">
+            <h1>Natasha Gulati</h1>
+            <p>
+                I love exploring technology, design and creative ideas that inspire me. Basketball keeps me motivated while curiosity drives me to learn and grow. I enjoy turning challenged into opportunites with a positive outlook.
+            </p>
+
+            <button class="btn">Explore</button>
+        </div>
+    </body>
+    </html>
+</DOCTYPE>
